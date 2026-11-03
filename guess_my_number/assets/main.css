@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+:root {
+  --yellow: rgb(224, 224, 4);
+  --red: rgb(197, 3, 3);
+  --green: rgb(36, 94, 22);
+  --white: rgb(238, 238, 238);
+  --black: rgb(34, 34, 34);
+  --body-font: "Press Start 2P", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--white);
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+}
+
+
+h1 {
+  color: var(--yellow);
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.container>* {
+  width: 100vw;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bttn {
+  font-size: 1.rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid var(--black);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 50px;
+}
+
+.bttn:hover {
+  cursor: pointer;
+  background-color: hsl(60, 96%, 65%);
+  box-shadow: 0 0.4rem 1rem 0 var(--yellow);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.bttn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.pop_up {
+  
+  position: absolute;
+  padding: 60px 0;
+  width: 600px;
+  background-color: var(--black);
+  border-radius: 6px;
+  border: 3px solid var(--yellow);
+  top: 30%;
+  left: 30%;
+  visibility: hidden;
+}
+
+.openpopup {
+  visibility: visible;
+}
+
+.blurred {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  padding:2px 6px;
+  font-weight: bold;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}

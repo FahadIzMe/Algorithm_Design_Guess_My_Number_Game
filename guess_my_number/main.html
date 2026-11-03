@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Guess My Number</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Guess My Number</h1>
+            <a class="bttn" id="btn" onclick="openpopup()">Play</a>
+        </div>
+    </div>
+
+    <div class="pop_up flex-column flex-center" id="pop">
+        <button class="cross" onclick="closepopup()">x</button>
+        <a class="bttn" href="index.html?mode=easy">EASY MODE</a>
+        <a class="bttn" id="moderate" href="index.html?mode=moderate">INTERMEDIATE MODE</a>
+        <a class="bttn" id="hard" href="index.html?mode=hard">HARD MODE</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
